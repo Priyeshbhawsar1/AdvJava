@@ -1,0 +1,48 @@
+package Bean;
+
+public class Login {
+    private String email;
+    private String password;
+    private int partyId;
+
+    public Login() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Login [email=" + email + ", password=" + password + ", partyId=" + partyId + "]";
+    }
+
+    public Login(String email, String password, int partyId) {
+        super();
+        this.email = email;
+        this.password = password;
+        this.partyId = partyId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getPartyId() {
+        return partyId;
+    }
+
+    public void setPartyId(int partyId) {
+        this.partyId = partyId;
+    }
+
+}
