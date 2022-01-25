@@ -1,9 +1,9 @@
-package Controller;
+package com.Controller;
 
-import Bean.Login;
-import Bean.Party;
-import Dao.Mail;
-import Dao.RegistrationDao;
+import com.Bean.Login;
+import com.Bean.Party;
+import com.Dao.Mail;
+import com.Dao.RegistrationDao;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/RegisterServlet")
 public class RegisterServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private Dao.RegistrationDao RegistrationDao;
+    private com.Dao.RegistrationDao RegistrationDao;
 
     /**
      * @see HttpServlet#HttpServlet()

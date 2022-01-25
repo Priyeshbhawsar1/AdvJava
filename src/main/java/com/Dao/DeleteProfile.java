@@ -1,4 +1,4 @@
-package Dao;
+package com.Dao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Connection;
 
-import Connection.DBConnection;
+import com.Connection.DBConnection;
 
 @WebServlet("/DeleteProfile")
 public class DeleteProfile extends HttpServlet {

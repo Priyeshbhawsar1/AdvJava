@@ -1,4 +1,4 @@
-package Dao;
+package com.Dao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,7 +15,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-import Connection.DBConnection;
+import com.Connection.DBConnection;
 
 @WebServlet("/Search")
 public class Search extends HttpServlet {

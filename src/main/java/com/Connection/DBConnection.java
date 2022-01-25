@@ -1,4 +1,4 @@
-package Connection;
+package com.Connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class DBConnection {
         Connection con;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/adv", "priyesh", "123456");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/adv", "priyesh", "123456");
             System.out.println("Connection Established");
             return con;
         } catch (SQLException sqlException) {

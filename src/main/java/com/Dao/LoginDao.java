@@ -1,10 +1,10 @@
-package Dao;
+package com.Dao;
 
-import Bean.Login;
+import com.Bean.Login;
 
 import javax.servlet.http.HttpServlet;
 
-import Connection.DBConnection;
+import com.Connection.DBConnection;
 
 import java.sql.*;
 

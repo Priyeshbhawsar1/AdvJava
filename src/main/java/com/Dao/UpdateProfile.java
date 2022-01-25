@@ -1,4 +1,4 @@
-package Dao;
+package com.Dao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import Connection.DBConnection;
+import com.Connection.DBConnection;
 
 @WebServlet("/UpdateProfile")
 public class UpdateProfile extends HttpServlet {

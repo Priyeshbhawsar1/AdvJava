@@ -1,4 +1,4 @@
-package Dao;
+package com.Dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,10 +8,10 @@ import java.sql.Statement;
 
 import javax.servlet.Registration;
 
-import Bean.Party;
-import Bean.Login;
+import com.Bean.Party;
+import com.Bean.Login;
 
-import Connection.DBConnection;
+import com.Connection.DBConnection;
 
 public class RegistrationDao {
     public static int incrementId() {

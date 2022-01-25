@@ -1,4 +1,4 @@
-<%@page import="Connection.DBConnection"%>
+<%@page import="com.Connection.DBConnection"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.sql.DriverManager"%>
@@ -74,15 +74,7 @@ String phone="";
 String partyId="";
 
      try {
-        Connection con =null;
-                 try{
-                     Class.forName("com.mysql.cj.jdbc.Driver");
-                     con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/adv", "priyesh", "123456");
-                     System.out.println("Connection Established");
-                     } catch (SQLException e)
-                     {
-                               e.getMessage();
-                     }
+                     Connection con = DBConnection.getConnection();
                       String qr = "select userLoginId, password from UserLogin";
                       Statement st = con.createStatement();
                       ResultSet rs = st.executeQuery(qr);

@@ -1,4 +1,4 @@
-package Controller;
+package com.Controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import Bean.Login;
-import Dao.LoginDao;
+import com.Bean.Login;
+import com.Dao.LoginDao;
 
 /**
  * Servlet implementation class LoginServlet

@@ -1,4 +1,4 @@
-package Bean;
+package com.Bean;
 
 public class Login {
     private String email;
